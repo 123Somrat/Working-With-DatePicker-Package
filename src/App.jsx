@@ -1,5 +1,6 @@
 import React from "react";
 import CustomHeader from "./assets/CustomHeader";
+import DateRange from "./DateRange";
 import { useState } from "react";
 import DatePicker from "react-datepicker"
 import { forwardRef } from "react";
@@ -17,7 +18,10 @@ function App() {
       onChange={(date) => setStartDate(date)}
       customInput={<ExampleCustomInput />}
     />
+    <p/>
     <CustomHeader/>
+    <p/>
+    <DateRange/>
     </>
     
   );
